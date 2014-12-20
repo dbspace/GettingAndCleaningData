@@ -1,14 +1,14 @@
 Coursera Getting And Cleaning Data Project
 ==========================================
 
-Steps to reproduce this project
--------------------------------
+High level Steps to reproduce this project
+------------------------------------------
 1. Download the source data from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 2. Unzip the data into the working directory under folder "UCIHARDataset"
 3. Excute the run_analysis.R R script
 
-Steps perform
--------------
+Detail Steps perform
+--------------------
 1.  Read the train data
 2.  Read the test data
 3.  Merges the training and the test data set in one
