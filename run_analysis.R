@@ -56,11 +56,10 @@ meanStdData$label <- factor(meanStdData$label, levels=label[,1], labels=label[,2
 # meanStdData have the appropriately labels with descriptive name
 # because we subset from combineData
 
-#split meanStdData by subject.label and assign to splitData
-splitData<-split(meanStdData,list(meanStdData$subject,meanStdData$label))
-
-#create tidy data with the mean of every variable 
-mytidyData<-sapply(splitData, function(x) colMeans(x[3:length(names(meanStdData))]))
+#create tidy data with the mean of every variable
+tidyData <- aggregate(meanStdData[, 3:81], 
+                      by = list(meanStdData$subject, meanStdData$label), FUN = mean)
+colnames(tidyData)[1:2] <- c("subject", "activity")
 
 #write out the data
-write.table(mytidyData, "tidyData.txt", row.names=FALSE)
+write.table(tidyData, "tidyData.txt", row.names=FALSE)
