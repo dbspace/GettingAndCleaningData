@@ -9,10 +9,10 @@ Data Transformation
 -------------------
 The "meanStdData" is a data frame produced by performing the following transformations:
 
-1. Combine data from the original training and test datasets into one dataset.
-2. Extract only those features from the original dataset that are a mean or standard deviation measure (mean or std in feature name).
-2. Add subject (numbers 1-30) to the single data frame.
-3. Add activities, by name, to the single data frame.
+1. Merges data from the original training and test datasets into one dataset.
+2. Add column name to the combine data set using features data
+3. Extracts only the measurements on the mean and standard deviation for each measurement
+4. Add activities, by name, to the single data frame.
 
 The resulting data frame has 10299 observation and 81 columns:
 
