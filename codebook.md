@@ -16,9 +16,9 @@ The "meanStdData" is a data frame produced by performing the following transform
 
 The resulting data frame has 10299 observation and 81 columns:
 
-1 subject : The subject, an integer in the range between 1 and 30
-2 activity : The activity performed by the subject
-3 tBodyAcc-mean()-X
+1. subject : The subject, an integer in the range between 1 and 30
+2. activity : The activity performed by the subject
+3. tBodyAcc-mean()-X
 4 tBodyAcc-mean()-Y
 5 tBodyAcc-mean()-Z
 6 tBodyAcc-std()-X
